@@ -76,6 +76,7 @@ pipeline {
                         to: 'kaushi.rajapakshe1@gmail.com', 
                         subject: "Integration Tests Status Email on Staging - ${currentBuild.result}", 
                         body: "Intergration Test on Staging was ${currentBuild.result}!\n Build Number: ${currentBuild.number}"
+                    )
                 }
             }
         }
