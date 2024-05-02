@@ -23,7 +23,7 @@ pipeline {
                         attachLog: true, 
                         to: 'kaushi.rajapakshe1@gmail.com', 
                         subject: "Unit and Integration Tests Status Email - ${currentBuild.result}", 
-                        body: "Unit and Intergration Tests was ${currentBuild.result}!\n Build Number: ${currentBuild.number}",
+                        body: "Unit and Intergration Tests was ${currentBuild.result}!\n Build Number: ${currentBuild.number}\n\n",
                         mimeType: 'text/html'
                     )
                 }
@@ -50,7 +50,7 @@ pipeline {
                         attachLog: true, 
                         to: 'kaushi.rajapakshe1@gmail.com', 
                         subject: "Security Scan Status Email - ${currentBuild.result}", 
-                        body: "Security Scan was ${currentBuild.result}!\n Build Number: ${currentBuild.number}"
+                        body: "Security Scan was ${currentBuild.result}!\n Build Number: ${currentBuild.number}\n\n"
                     )
                 }
             }
@@ -75,7 +75,7 @@ pipeline {
                         attachLog: true, 
                         to: 'kaushi.rajapakshe1@gmail.com', 
                         subject: "Integration Tests Status Email on Staging - ${currentBuild.result}", 
-                        body: "Intergration Test on Staging was ${currentBuild.result}!\n Build Number: ${currentBuild.number}"
+                        body: "Intergration Test on Staging was ${currentBuild.result}!\n Build Number: ${currentBuild.number}\n\n"
                     )
                 }
             }
